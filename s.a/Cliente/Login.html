@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800;900&display=swap" />
+    <link rel="stylesheet" href="Login.css">
+    <script type="text/javascript" src="Login.js"></script>
+        
+</head>
+<body>
+    <div class="overlay">
+        <h1 class="close-button">X</h1>
+        <h1 class="titulo">Login</h1>
+
+        <div class="input-group">
+            <label class="input-label" for="usuario">Usuário</label>
+            <input class="input-field" type="text" id="usuario" placeholder="usuário" required>
+        </div>
+
+        <div class="input-group">
+            <label class="input-label" for="senha">Senha</label>
+            <input class="input-field" type="password" id="senha" placeholder="senha" required>
+        </div>
+
+
+        <!-- <script>
+          function enviar() {
+    const nome = document.getElementById("nome");
+    const senha = document.getElementById("senha").value;
+    console.log(nome);
+    console.log(senha);
+
+    const obj = {
+        nome: nome,
+        senha: senha,
+    };
+
+    localStorage.setItem("login", JSON.stringify(obj));
+    window.location.src="Cadastro"
+}
+        </script> -->
+
+        <!-- <a href=enviar()>teste.Login</div>a> -->
+
+        <a href="Cadastro.html"><button   class="button nova-conta">Nova Conta</button></a>
+        <a href="main.html"><button class="button login" onclick="enviar()">Login</button></a>
+        
+        </body>
+    </div> 
+</body>
+</html>
