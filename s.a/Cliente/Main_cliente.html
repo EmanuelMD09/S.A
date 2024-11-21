@@ -1,0 +1,119 @@
+
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Página Principal</title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" />
+     <link rel="stylesheet" href="Main_cliente.css">
+     <script src="Main_cliente.js" defer></script>
+ </head>
+ <body>
+ 
+     <div class="main-container">   
+           
+         <header class="header">
+             <div class="logo">SK8</div>
+             <a href="Carrinho.html"><button id="carrinho-butao">Carrinho</button></a>
+         </header>
+
+         <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+              <img src="../assets/images/teste3.png" style="width:100%; height: 625px;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="../assets/images/banner-2.PNG" style="width:100%; height: 800px;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="../assets/images/banner-4.PNG" style="width:100%; height: 800px;">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+ 
+         <div class="product-grid">
+             <!-- Produto 1 --> 
+             <div class="produto">
+                 <img src="../assets/images/Camiseta borboleta.PNG" alt="Produto 1" class="product-image" id="camiseta-borboleta">
+                 <div class="produto-info">
+                     <h2 class="nome-produto">Camiseta 1</h2>
+                     <p class="descricao-produto">Camiseta com estampa nas costas, 100% algodão.</p>
+                     <div class="preco">R$129.89</div>
+                     <div class="estoque">Em estoque</div>
+                     <div class="rating">
+                         <span class="estrela">★★★★☆</span>
+                         <span class="avaliacao">(42 avaliações)</span>
+                     </div>
+                     <button class="add-carrinho" onclick="adicionarAoCarrinho('Camiseta 1', 129.99)">Adicionar ao carrinho</button>
+                 </div>
+             </div>
+ 
+             <!-- Produto 2 -->
+             <div class="produto">
+                 <img src="../assets/images/camiseta-2.PNG" alt="Produto 2" class="product-image" id="camiseta-2">
+                 <div class="produto-info">
+                     <h2 class="nome-produto">Camiseta 2</h2>
+                     <p class="descricao-produto">Camiseta com estampa nas costas, 100% algodão Oversized.</p>
+                     <div class="preco">R$149.99</div>
+                     <div class="estoque">Em estoque</div>
+                     <div class="rating">
+                         <span class="estrela">★★★★★</span>
+                         <span class="avaliacao">(128 avaliações)</span>
+                     </div>
+                     <button class="add-carrinho" onclick="adicionarAoCarrinho('Camiseta 2', 149.99)">Adicionar ao carrinho</button>
+                 </div>
+             </div>
+         </div>
+ 
+         <div class="product-grid">
+            <!-- Produto 3 --> 
+            <div class="produto">
+                <img src="../assets/images/camiseta-3.PNG" alt="Produto 3" class="product-image" id="camiseta-borboleta">
+                <div class="produto-info">
+                    <h2 class="nome-produto">Camiseta 3</h2>
+                    <p class="descricao-produto">Camiseta com estampa nas costas, 100% algodão.</p>
+                    <div class="preco">R$139.89</div>
+                    <div class="estoque">Em estoque</div>
+                    <div class="rating">
+                        <span class="estrela">★★★★☆</span>
+                        <span class="avaliacao">(63 avaliações)</span>
+                    </div>
+                    <button class="add-carrinho" onclick="adicionarAoCarrinho('Camiseta 3', 139.89)">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="produto">
+                <img src="../assets/images/camiseta-2.PNG" alt="Produto 4" class="product-image" id="camiseta-2">
+                <div class="produto-info">
+                    <h2 class="nome-produto">Camiseta 4</h2>
+                    <p class="descricao-produto">Camiseta com estampa nas costas, 100% algodão Oversized.</p>
+                    <div class="preco">R$125.77</div>
+                    <div class="estoque">Em estoque</div>
+                    <div class="rating">
+                        <span class="estrela">★★★★★</span>
+                        <span class="avaliacao">(128 avaliações)</span>
+                    </div>
+                    <button class="add-carrinho" onclick="adicionarAoCarrinho('Camiseta 4', 125.77)">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+     </div>
+ 
+     
+ </body>
+ </html>
