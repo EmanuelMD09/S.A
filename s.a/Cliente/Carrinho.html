@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <a href="Main_cliente.html"> <button id="random-page-button" >Voltar</button></a>
+</head>
+<body>
+    <div class="main-container">
+        <div class="union"></div>
+        <div class="flex-column-bf">
+            <span class="produtos">Produtos</span>
+            <span class="no-products">Não há produtos no carrinho</span>
+        </div>
+        
+        <!-- Container Flex para Carrinho e Pagamento -->
+        <div class="flex-container">
+            <div id="carrinho">
+                <ul id="lista-carrinho"></ul>
+                <p id="total"></p>
+                <button id="limpar-carrinho">Limpar Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Área de Pagamento fora do contêiner do carrinho -->
+        <div id="payment-section">
+            <h3>Pagamento</h3>
+            <form id="payment-form">
+                <input type="number" placeholder="Número do Cartão" required />
+                <input type="text" placeholder="Nome no Cartão" required />
+                <input type="date" placeholder="Data de Validade (MM/AA)" required />
+                <input type="number" placeholder="CVV" id="cvv" required maxlength="3" pattern="\d{3}"  />                
+                <button type="submit" >Pagar</button>
+            </form>
+         
+            <img src="https://ci3.googleusercontent.com/mail-img-att/AGAZnRrHb1ovMCbJ2iwgnOx-pAhnwDMHucdAuDEDM79V2huE9hYUV2bTmLAIDvPTrXw5Ac8v4Md_g5LFxXPZvPmj7VC1QBDCTMCcjC1_4A8IdWI2TtGJagS96-i7QBFt1BjxVfDzdSwtASSUcEedVxBh0c35KjmtvJTe-YZj6vkmQTqcRkyLE8Nqy-EJ3Z9UqmRNXHsfGxTOUmeIKGuOSKQvMBH2-aeCHBPLKAaNhP1bSrMSmoZrsFdn7vyibpwnwHiqT5RQkL3BRk8pLwnJbaMhMOb3zKWLY3Gn6SvtgG7xzBgQmeisSrrPgIob9UR2upaAR_T3UcBBa3wpvWhcAipno8UEBi0ZzJO04O2f-EIteARds22UdvzECTwvKYMMb9RQXmwk-vZwuVmUTOzhtlIVw6cfko4Llaf35TpoNmOSGavimYzbpaf4JzShQFaGT6oMxaSmx4MJ6bZfxLl-tRb8HrEnRt6afk6iVQ_m4010IFGmuBb9POkLOBxoOK753mf4OlXii9A8PXt6XYZihsPcu0w3q0TqXYO0I_ZaUHdoNqAcyavqqmX4_G4vCQqtxi1yWDMq4OEcmSVLPTujIlUbgyWTiNpHQ_5gJE6xsm8Zl2sEIrg9P1FLXDsNhE46Skt9WENbXEJc9_zjSX7ZkwG3keETKtGgAXzFgcOVBdPUHlLZ00YhC8vegY_m0NhEMQw7gPdCDY-zGBBdzo27_7iJTVcw3oMb7EgWqYIBejE5pjX-KjiCwEUA5NCWVEbVqpExysHbLLdO2pJTnEi-ssdoeHgqRYe6KF489yjsOQgW01ypI50j7JqHARVbqx-58xGbOyaH4gtMDN70_q7GJcfyEMbM4_k4X5PMvB-kspYQLhfe95xRq_T176FCUmT2Lu9MlwHi9KUfBcQXSuOIiwI-CIWo7MebwiK-CBNRgtwGLLKu5Nq_Et8aw_rn5JPGaEsbtTgeS093XFh6uaV-jDOkUg6ySFabu9msjvj8pnNkXBpe-d7d5qM6R5XkPj_DhJxAz4Omr3JeZ9sP9aZnFWYnno2nPA=s0-l75-ft" alt="">
+        </div>
+    </div>
+
+    <script src="carrinho.js"></script>
+</body>
+</html>
