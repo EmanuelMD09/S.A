@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibição Produto</title>
+    <link rel="stylesheet" href="compraProduto1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8A7655;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .produto {
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+            width: auto;
+        }
+
+        .product-image {
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .produto-info {
+            flex: 1;
+        }
+
+        .nome-produto {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        .descricao-produto {
+            margin: 0 0 15px;
+        }
+
+        .preco {
+            font-size: 20px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .estoque {
+            margin: 5px 0;
+            color: green;
+        }
+
+        .descricaoDetalhada {
+            margin: 20px 0;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .estrela {
+            margin-right: 10px;
+        }
+
+        .add-carrinho {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-carrinho:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .produto {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+            .col-md-3 {
+            position: relative;
+        }
+            .col-md-3 .seg {
+            visibility: hidden;
+            opacity: 0;
+            position:absolute;
+            top:0;
+            left:0;
+            transition: opacity 0.5s ease;
+        }
+            .col-md-3:hover .seg {
+                visibility: visible;
+                opacity: 1;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="#" style="color: white; text-decoration: none;">SK8</a>
+    </div>
+
+    <div class="product-grid">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <div class="col-md-3">
+                <img class="pri" src="../assets/images/borboleta-frente.PNG" alt="Produto 1" class="product-image" id="camiseta-borboleta""/>
+                <img class="seg" src="/assets/images/borboleta-tras.PNG">
+            </div>
+            <div class="produto-info">
+                <h2 class="nome-produto">Camiseta SK8</h2>
+                <p class="descricao-produto">Camiseta com estampa nas costas, 100% algodão.</p>
+                <div class="preco">R$99.99</div>
+                <div class="estoque">Em estoque</div>
+                
+                <div class="descricaoDetalhada">
+                    <p>A camiseta Sk8 é ideal para quem deseja um visual urbano e cheio de personalidade. Inspirada na cultura do skate,
+                         ela apresenta um design único que combina perfeitamente com a vibe das ruas. Feita com tecido de alta qualidade,
+                          garante conforto e durabilidade, mesmo nas rotinas mais intensas. Os detalhes sutis, como o logo estilizado e as costuras reforçadas,
+                           oferecem um toque de autenticidade, tornando essa peça indispensável para quem busca se destacar.</p>
+                    <p>Tecido de alta qualidade: macio ao toque e resistente ao desgaste diário.</p>
+                    <p>Corte moderno: caimento que valoriza o corpo, proporcionando um look casual e descolado.</p>
+                    <p>Detalhes exclusivos: logo estilizado e acabamentos que reforçam a identidade da marca.</p>
+                    <p>Versatilidade: combina facilmente com diferentes peças do seu guarda-roupa, desde jeans até bermudas.</p>
+                    <p>Estilo urbano: para quem aprecia a liberdade e a autenticidade da vida nas ruas.</p>
+                    <p>Detalhes:</p>
+                    <ul>
+                        <li>Modelagem regular</li>
+                        <li>Aplicação de silk zero-toque</li>
+                        <li>Costuras reforçadas</li>
+                        <li>Acabamento impecável</li>
+                        <li>Etiqueta interna e na lateral</li>
+                        <li>Lavável à máquina</li>
+                    </ul>
+                </div>
+
+                <div class="rating">
+                    <span class="estrela">★★★★☆</span>
+                    <span class="avaliacao">(42 avaliações)</span>
+                </div>
+                <button class="add-carrinho">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
