@@ -1,0 +1,94 @@
+.h2{
+    text-align: left;
+    justify-content: center;
+    display: flex;
+  
+}
+
+.produto {
+    background: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.produto-info {
+    padding: 20px;
+}
+
+.nome-produto {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.descricao-produto {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--price-color);
+    margin-bottom: 15px;
+}
+
+.estoque {
+    font-size: 14px;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.estrela {
+    color: #f1c40f;
+    font-size: 18px;
+}
+
+.avaliacao {
+    font-size: 14px;
+    color: #666;
+    margin-left: 5px;
+}
+
+.add-carrinho {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-carrinho:hover {
+    background-color: #2980b9;
+}
+
+#camiseta-borboleta {
+    width: auto;
+    height: auto;
+}
