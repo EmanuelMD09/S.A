@@ -1,0 +1,102 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+}
+
+body {
+    font-family: var(--default-font-family);
+    margin: 0;
+    /* background: rgba(0, 0, 0, 0.5); */
+    background-image: url("logo.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden; /*Oculta*/
+}
+
+.overlay {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /*add um efeito*/
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: inherit; /* deixa com a cor do resto do texto*/
+    text-decoration: none;
+}
+
+.titulo {
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px; /* Espaçamento abaixo do grupo de entrada */
+}
+
+.input-label {
+    display: block; /* Exibe como bloco */
+    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+    color: #333; /* Cor do texto */
+}
+
+.input-field {
+    width: 95.5%; /* Largura do campo de entrada */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.button {
+    width: 100%; /* Largura total */
+    padding: 15px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 800; /* Peso da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+    margin-top: 10px; /* Espaçamento acima */
+}
+
+.nova-conta {
+    background: #fff; /* Fundo branco */
+    color: #000; /* Texto preto */
+    border: 1px solid #000; /* Borda preta */
+}
+
+.login {
+    background: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    border: 1px solid #000; /* Borda preta */
+}
+
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 28px; /* Tamanho da fonte do título em telas pequenas */
+    }
+    .button {
+        font-size: 16px; /* Tamanho da fonte do botão em telas pequenas */
+    }
+} 
